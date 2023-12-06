@@ -1,0 +1,29 @@
+type Recipe = record {
+  id : text;
+  ownerName : text;
+  recipeName : text;
+  recipeType : text;
+  ownerId : text;
+  description : text;
+  videoDemonstration : text;
+};
+type RecipePayload = record {
+  ownerName : text;
+  recipeName : text;
+  recipeType : text;
+  description : text;
+  videoDemonstration : text;
+};
+type _AzleResult = variant { Ok : Recipe; Err : text };
+type _AzleResult_1 = variant { Ok : vec Recipe; Err : text };
+service : () -> {
+  createRecipe : (RecipePayload) -> (_AzleResult);
+  deleteRecipe : (text, text) -> (_AzleResult);
+  getAllRecipes : () -> (_AzleResult_1) query;
+  getOwnersRecipesById : (text) -> (_AzleResult_1) query;
+  getRecipeById : (text) -> (_AzleResult) query;
+  getRecipeByName : (text) -> (_AzleResult_1) query;
+  getRecipesByOwnersName : (text) -> (_AzleResult_1) query;
+  getRecipesByType : (text) -> (_AzleResult_1) query;
+  updateRecipe : (text, text, RecipePayload) -> (_AzleResult);
+}
