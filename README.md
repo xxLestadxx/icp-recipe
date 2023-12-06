@@ -24,6 +24,15 @@ Icp-recipe is a simple CRUD project to showcase how to write and deploy canister
 
 ## Run Locally
 
+```
+Used versions of technologies : 
+  - Node version 18.12.1
+  - dfx start for version 0.14.2
+  - azle - 0.17.1
+  - uuid - ^9.0.1
+```
+
+
 `dfx` is the tool you will use to interact with the IC locally and on mainnet. If you don't already have it installed:
 
 ```
