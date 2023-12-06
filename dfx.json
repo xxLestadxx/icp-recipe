@@ -1,12 +1,12 @@
 {
   "canisters": {
-    "events": {
+    "recipe_book": {
       "type": "custom",
-      "build": "npx azle events",
+      "build": "npx azle recipe_book",
       "root": "src",
       "ts": "src/index.ts",
       "candid": "src/index.did",
-      "wasm": ".azle/events/events.wasm.gz"
+      "wasm": ".azle/recipe_book/recipe_book.wasm.gz"
     }
   }
 }

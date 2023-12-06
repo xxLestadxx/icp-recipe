@@ -3,9 +3,9 @@
         "dfx_install": "sh -ci \"$(curl -fsSL https://sdk.dfinity.org/install.sh)\"",
         "replica_start": "dfx start --background",
         "replica_stop": "dfx stop",
-        "canister_deploy_local": "dfx deploy events",
-        "canister_deploy_mainnet": "dfx deploy --network ic events",
-        "canister_uninstall": "dfx canister uninstall-code events"
+        "canister_deploy_local": "dfx deploy recipe_book",
+        "canister_deploy_mainnet": "dfx deploy --network icrecipe_book",
+        "canister_uninstall": "dfx canister uninstall-code recipe_book"
     },
     "dependencies": {
         "azle": "0.17.1",
