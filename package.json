@@ -8,7 +8,7 @@
         "canister_uninstall": "dfx canister uninstall-code recipe_book"
     },
     "dependencies": {
-        "azle": "0.17.1",
+        "azle": "0.33.0",
         "uuid": "^9.0.1"
     },
     "devDependencies": {
